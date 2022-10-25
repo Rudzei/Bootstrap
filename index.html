@@ -12,20 +12,171 @@
 
 <body>
 
-  <header class="py-5 mb-2 bg-primary">
+  <header class="mb-2 bg-primary">
+
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="text-white text-center">Bootstrap TEST</h1>
+          <h1 class="text-white text-center py-2">Bootstrap</h1>
         </div>
       </div>
     </div>
+
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/bootstrap-logo.svg" alt="Bootstrap" width="60" height="48">
+          </a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-primary"
+          aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-primary">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Icons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Getting started
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Introduction</a></li>
+                <li><a class="dropdown-item" href="#">Contents</a></li>
+                <li><a class="dropdown-item" href="#">Browsers & devices</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Webpack</a></li>
+                <li><a class="dropdown-item" href="#">Parcel</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Contribute</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Download</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
   </header>
 
   <div class="container">
     <div class="row">
-      <main class="col-xl-6 col-md-8 mb-2 bg-secondary">MAIN</main>
-      <aside class="col-xl-3 col-md-4 col-sm-6 mb-2 order-md-first bg-danger">LEFT</aside>
+      <main class="col-xl-6 col-md-8 mb-2 bg-white">
+        <div id="carousel-block" class="carousel carousel-dark slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-block" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-block" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-block" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/maxresdefault-1.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/chto_takoye_bootstrap_top.jpg" class="d-block w-100" alt="img">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/598970_ee10.jpg" class="d-block w-100" alt="img">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-block" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-block" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </main>
+      <aside class="col-xl-3 col-md-4 col-sm-6 mb-2 order-md-first bg-danger">
+        <div class="py-2">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#accordion__itemOne" aria-expanded="false" aria-controls="accordion__itemOne">
+                  Что такое Bootstrap?
+                </button>
+              </h2>
+              <div id="accordion__itemOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                <div class="accordion-body">Bootstrap - один из самых популярных инструментов, который используется при
+                  создании сайтов и веб-приложений.
+                  Bootstrap включает в себя множество разных компонентов для веб-сайтов: типографику, веб-формы, кнопки,
+                  блоки навигации и другое.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#accordion__itemTwo" aria-expanded="false" aria-controls="accordion__itemTwo">
+                  Преимущества Bootstrap
+                </button>
+              </h2>
+              <div id="accordion__itemTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                <div class="accordion-body">
+                  <ul class="accordion-body__list">
+                    <li class="accordion-body__item">Уменьшение количества времени, затрачиваемого на разработку</li>
+                    <li class="accordion-body__item">Адаптивность</li>
+                    <li class="accordion-body__item">Кросс-браузерность</li>
+                    <li class="accordion-body__item">Легкость в использовании и быстрота в освоении</li>
+                    <li class="accordion-body__item">Понятный код</li>
+                    <li class="accordion-body__item">Единство стилей</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#accordion__itemThree" aria-expanded="false" aria-controls="accordion__itemThree">
+                  Недостатки Bootstrap
+                </button>
+              </h2>
+              <div id="accordion__itemThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+                <div class="accordion-body">
+                  <ul class="accordion-body__list">
+                    <li class="accordion-body__item">Шаблонность</li>
+                    <li class="accordion-body__item">Отсутствие гибкости</li>
+                    <li class="accordion-body__item">Старые браузеры</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
       <aside class="col-xl-3 col-md-12 col-sm-6 mb-2 bg-success">RIGHT</aside>
     </div>
   </div>
@@ -34,7 +185,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="text-white text-center">@ Bootstrap 5.2</div>
+          <div class="text-white text-end">@ Bootstrap 5.2</div>
         </div>
       </div>
     </div>
